@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "y y m"
+    "r v m"
+    "r p p";
+  gap: 10px;
+}
+
+div:nth-child(1) {
+  background: yellow;
+  grid-area: y;
+}
+
+div:nth-child(2) {
+  background: violet;
+  grid-area: m;
+}
+div:nth-child(3) {
+  background: red;
+  grid-area: r;
+}
+div:nth-child(4) {
+  background: green;
+  grid-area: v;
+}
+div:nth-child(5) {
+  background: pink;
+  grid-area: p;
+}
